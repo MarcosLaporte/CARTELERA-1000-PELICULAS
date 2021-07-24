@@ -21,7 +21,6 @@
     <button id="peores">Marcar peores películas</button>
     </section>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script>
         let btnSwitch = document.querySelector("#switch");
         let btnRandom = document.querySelector("#random");
@@ -1089,10 +1088,11 @@
     ]
     
     // Escribe toda la lista
+    let a = 1;
         document.write(`<h3>Lista de películas:</h3>`);
         document.write(`<ol>`);
-                for(let i = 1; i < pelis.length; i++){
-                    document.write(`<li>${pelis[i]}</li>`);
+                for(a = 1; a < pelis.length/2; a++){
+                    document.write(`<li>${pelis[a]}</li>`);
                 }
         document.write(`</ol>`);
 
@@ -1311,7 +1311,7 @@
                 alert(`La película con ese número (${random}) es: ${namePeli}.`)
             console.log(`${random}, ${namePeli}`);
         }
-        
+
 </script>
 </body>
 </html>
