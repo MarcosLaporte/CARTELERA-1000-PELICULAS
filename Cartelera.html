@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARTELERA</title>
 </head>
-<body style="background-color: bisque;">
+<body style="background-color: white;">
     <h1>CARTELERA - 1000 PELIS PARA VER ANTES DE MORIR</h1>
 
     <button style="font-size: larger; border-color: firebrick; border-radius: 1mm; background-color:beige;" id="random">Presione para obtener una película aleatoria.</button>
     <section>
+        <br>
     <button id="switch">Switch Mode</button>
+    <button id="buscar">Buscar una película</button>
+        <br>
+        <br>
     <button id="vistas">Marcar películas vistas</button>
     <button id="mejores">Marcar mejores películas</button>
     <button id="peores">Marcar peores películas</button>
-    <button id="buscar">Buscar una película</button>
     </section>
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
@@ -29,55 +32,57 @@
 
         // Botón de estilo de página
         btnSwitch.onclick = function(){
-            if(document.body.style.backgroundColor == "bisque" && document.body.style.color == "black"){
+            if(document.body.style.backgroundColor == "white" && document.body.style.color == "black"){
                 document.body.style.backgroundColor = "darkslategray";
-                document.body.style.color = "bisque";
+                    document.body.style.color = "white";
                 btnRandom.style.backgroundColor = "rgb(68, 116, 116)";
-                btnRandom.style.color = "white";
+                    btnRandom.style.color = "white";
                 btnSwitch.style.backgroundColor = "gray";
-                btnSwitch.style.color = "white";
+                    btnSwitch.style.color = "white";
                 btnBuscar.style.backgroundColor = "gray";
-                btnBuscar.style.color = "white";
+                    btnBuscar.style.color = "white";
                 btnSeen.style.backgroundColor = "gray";
-                btnSeen.style.color = "white";
+                    btnSeen.style.color = "white";
                 btnBest.style.backgroundColor = "gray";
-                btnBest.style.color = "white";
+                    btnBest.style.color = "white";
                 btnBad.style.backgroundColor = "gray";
-                btnBad.style.color = "white";
+                    btnBad.style.color = "white";
             }
-            else if(document.body.style.backgroundColor == "darkslategray" && document.body.style.color == "bisque"){
-                document.body.style.backgroundColor = "bisque";
-                document.body.style.color = "black";
+            else if(document.body.style.backgroundColor == "darkslategray" && document.body.style.color == "white"){
+                document.body.style.backgroundColor = "white";
+                    document.body.style.color = "black";
                 btnRandom.style.backgroundColor = "beige";
-                btnRandom.style.color = "black";
+                    btnRandom.style.color = "black";
                 btnSwitch.style.backgroundColor = "white";
-                btnSwitch.style.color = "black";
+                    btnSwitch.style.color = "black";
                 btnBuscar.style.backgroundColor = "white";
-                btnBuscar.style.color = "black";
+                    btnBuscar.style.color = "black";
                 btnSeen.style.backgroundColor = "white";
-                btnSeen.style.color = "black";
+                    btnSeen.style.color = "black";
                 btnBest.style.backgroundColor = "white";
-                btnBest.style.color = "black";
+                    btnBest.style.color = "black";
                 btnBad.style.backgroundColor = "white";
-                btnBad.style.color = "black";
+                    btnBad.style.color = "black";
             }
             else{
                 document.body.style.backgroundColor = "darkslategray";
-                document.body.style.color = "bisque";
+                    document.body.style.color = "white";
                 btnRandom.style.backgroundColor = "rgb(68, 116, 116)";
-                btnRandom.style.color = "white";
+                    btnRandom.style.color = "white";
                 btnSwitch.style.backgroundColor = "gray";
-                btnSwitch.style.color = "white";
+                    btnSwitch.style.color = "white";
                 btnBuscar.style.backgroundColor = "gray";
-                btnBuscar.style.color = "white";
+                    btnBuscar.style.color = "white";
                 btnSeen.style.backgroundColor = "gray";
-                btnSeen.style.color = "white";
+                    btnSeen.style.color = "white";
                 btnBest.style.backgroundColor = "gray";
-                btnBest.style.color = "white";
+                    btnBest.style.color = "white";
                 btnBad.style.backgroundColor = "gray";
-                btnBad.style.color = "white";
+                    btnBad.style.color = "white";
             }
         }
+
+        document.write(`<hr size=1 color=gray>`);
 
         const pelis = [
     "",
