@@ -7,7 +7,8 @@
     <title>CARTELERA</title>
 </head>
 <body style="background-color: #15202B; color: white; font-family: Bahnschrift condensed;">
-    <h1>CARTELERA - 1000 PELIS PARA VER ANTES DE MORIR</h1>
+    <h1 style="text-align: center;">★ CARTELERA ★</h1>
+    <h2 style="text-align: center; text-decoration-line: underline overline;">1000 PELIS PARA VER ANTES DE MORIR</h2>
 
     <button id="random"; style="font-size: larger; font-family: inherit; border-radius: 2.5mm; background-color:#1A91DA; border: none;">Presione para obtener una película aleatoria.</button>
         <p>
@@ -20,8 +21,7 @@
         </p>
 
     <script>
-       
-        
+               
         let btnSwitch = document.querySelector("#switch");
         let btnRandom = document.querySelector("#random");
         let btnSeen = document.querySelector("#vistas");
@@ -1066,6 +1066,7 @@
     ]; 
 </script>
 
+    <!-- Lista de pelis -->
     <section>
     <label for="pelis">Buscá una película: </label>
     <input list="pelis" name="Lista de pelis" id="lista">
@@ -2075,6 +2076,7 @@
     </section>
 
 <script>
+
     document.write(`<hr size=1 color=#38444D>`);
     // Escribe toda la lista
         document.write(`<h3>Lista de películas:</h3>`);
@@ -2256,7 +2258,7 @@
         // Marca las mejores películas
         btnBest.onclick = function(){
             let contBest = 0;
-            for(let i = 1; i < pelis.length; i++){
+            for(var i = 1; i < pelis.length; i++){
                 if(pelis[BEST[i]] != undefined){
                 console.log(pelis[BEST[i]]);
                 contBest++;
