@@ -38,7 +38,7 @@ let btnBuscar = document.querySelector("#buscar");
     }
     
     // Buscador de pelis
-    btnBuscar.onclick = function(){
+    /* btnBuscar.onclick = function(){
         let busqueda = prompt("Ingrese el nombre de una película:").toUpperCase();
         while(busqueda.length == 0){
             busqueda = prompt("Debe ingresar algo. Ingrese el nombre de una película:").toUpperCase();
@@ -53,7 +53,7 @@ let btnBuscar = document.querySelector("#buscar");
                 console.log(`"${busqueda}" no existe.`);
             }
         }
-    }
+    } */
 
 let namePeli;
 let min = 1;
