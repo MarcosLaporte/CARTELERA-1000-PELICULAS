@@ -7,8 +7,8 @@
 	<title>CARTELERA</title>
 </head>
 <body style="background-color: #15202B; color: white; font-family: Bahnschrift condensed;">
-	<h1 style="text-align: center;">★ CARTELERA ★</h1>
 	<h2 style="text-align: center; text-decoration-line: underline overline;">1000 PELIS PARA VER ANTES DE MORIR</h2>
+	<h1 style="text-align: center;">★ CARTELERA ★</h1>
 
 	<button id="random"; style="font-size: larger; font-family: inherit; border-radius: 2.5mm; background-color:#1A91DA; border: none;">Presione para obtener una película aleatoria</button>
 	<button id="switch"; style = "font-size: large; font-family: inherit; border-radius: 2.5mm; background-color:#1A91DA; border: none;">Switch Mode</button>
@@ -30,7 +30,6 @@
 	];
 	
 	// Lista de pelis
-
 	$(document).ready( function() {
 	    	$(pelis).each( function(index, item) {
 	        let option = $(`<option value="${item}"></option>`);
@@ -44,6 +43,7 @@
 	<input name="peliculas" list="peliculas"/>
 	<datalist id="peliculas">
 	</datalist>
+
 <script>
 
 	document.write(`<hr size=1 color=#38444D>`);
@@ -51,7 +51,7 @@
 		document.write(`<h3>Lista de películas:</h3>`);
 		document.write(`<ol>`);
 				for(let a = 1; a < pelis.length; a++){
-					document.write(`<li>${pelis[a]}</li>`);
+					document.write(`${pelis[a]} ║ `);
 /* 					if(a == 250 || a == 500 || a == 750){
 						document.write("<br>");
 					} */
