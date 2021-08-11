@@ -1,10 +1,32 @@
 body{
-    width: 1355px;
+	width: 1280px;
+	background: #15202B;
+	color: white;
+	font-family: Bahnschrift condensed;
+	text-align: left;
+}
+
+h2{
+	text-align: center;
+	text-decoration-line: underline overline;
+	margin-bottom: 0px;
+}
+
+h1{
+	text-align: center;
+	margin-top: 0px;
+}
+
+#random, #switch, #buscar, #vistas, #mejores, #peores{
+	font-size: large;
+	font-family: inherit;
+	border-radius: 2.5mm;
+	background-color:#1A91DA;
+	border: none;
 }
 
 #lista{
-    border: 5px solid red;
-    text-align: justify;
-    
+	border: 2.5px solid black;
+	text-align: center;
+	text-decoration: underline overline gray;
 }
-
