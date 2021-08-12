@@ -1,20 +1,25 @@
 body{
-	width: 1280px;
+	width: 1335px;
 	background: #15202B;
 	color: white;
 	font-family: Bahnschrift condensed;
 	text-align: left;
 }
 
-h2{
+#header h2{
 	text-align: center;
-	text-decoration-line: underline overline;
+	/* text-decoration-line: underline overline; */
+	border-top: 5px solid white;
 	margin-bottom: 0px;
 }
 
-h1{
+#header h1{
+	font-size: 50px;
 	text-align: center;
 	margin-top: 0px;
+	margin-bottom: 15px;
+	border-bottom: 5px solid white;
+	border-top: 5px solid white;
 }
 
 #random, #switch, #buscar, #vistas, #mejores, #peores{
@@ -23,10 +28,13 @@ h1{
 	border-radius: 2.5mm;
 	background-color:#1A91DA;
 	border: none;
+	margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 #lista{
 	border: 2.5px solid black;
 	text-align: center;
 	text-decoration: underline overline gray;
+	font-size: 17.5px;
 }

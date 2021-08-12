@@ -10,6 +10,7 @@ let btnBuscar = document.querySelector("#buscar");
 		if(document.body.style.backgroundColor == "#15202B"){
 			document.body.style.backgroundColor = "white";
 				document.body.style.color = "black";
+			document.headear
 			btnSwitch.style.color = "white";
 			btnRandom.style.color = "white";
 			btnSeen.style.color = "white";
@@ -55,7 +56,6 @@ let btnBuscar = document.querySelector("#buscar");
 		}
 	}
 
-let namePeli;
 let min = 1;
 let max = 1001;
 let random;
@@ -126,6 +126,6 @@ let nameBAD = [];
 			}else{
 				alert(`La película elegida es la número ${random}!`);
 			}
-		alert(`La película con ese número (${random}) es: ${namePeli}.`);
-		console.log(`${random}, ${namePeli}`);
+		alert(`La película con ese número (${random}) es: ${pelis[random]}.`);
+		console.log(`${random}, ${pelis[random]}`);
 	}
