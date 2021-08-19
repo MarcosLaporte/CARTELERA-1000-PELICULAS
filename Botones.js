@@ -7,18 +7,8 @@ let btnBuscar = document.querySelector("#buscar");
 
 	// Botón de estilo de página
 	btnSwitch.onclick = function(){
-		if(document.body.style.backgroundColor == "#15202B"){
-			document.body.style.backgroundColor = "white";
-				document.body.style.color = "black";
-			document.headear
-			btnSwitch.style.color = "white";
-			btnRandom.style.color = "white";
-			btnSeen.style.color = "white";
-			btnBest.style.color = "white";
-			btnBad.style.color = "white";
-			btnBuscar.style.color = "white";
-		}else if(document.body.style.backgroundColor == "white"){
-			document.body.style.backgroundColor = "#15202B";
+		if(document.body.style.background == "white"){
+			document.body.style.background = "#15202b";
 				document.body.style.color = "white";
 			btnSwitch.style.color = "#15202B";
 			btnRandom.style.color = "#15202B";
@@ -26,8 +16,9 @@ let btnBuscar = document.querySelector("#buscar");
 			btnBest.style.color = "#15202B";
 			btnBad.style.color = "#15202B";
 			btnBuscar.style.color = "#15202B";
-		}else{
-			document.body.style.backgroundColor = "white";
+			alert("A");
+		}else if(document.body.style.background == "rgb(21, 32, 43)"){
+			document.body.style.background = "white";
 				document.body.style.color = "black";
 			btnSwitch.style.color = "white";
 			btnRandom.style.color = "white";
@@ -35,6 +26,17 @@ let btnBuscar = document.querySelector("#buscar");
 			btnBest.style.color = "white";
 			btnBad.style.color = "white";
 			btnBuscar.style.color = "white";
+			alert("B");
+		}else{
+			document.body.style.background = "#15202b";
+				document.body.style.color = "white";
+			btnSwitch.style.color = "#15202B";
+			btnRandom.style.color = "#15202B";
+			btnSeen.style.color = "#15202B";
+			btnBest.style.color = "#15202B";
+			btnBad.style.color = "#15202B";
+			btnBuscar.style.color = "#15202B";
+			alert("C");
 		}
 	}
 	
@@ -59,7 +61,7 @@ let btnBuscar = document.querySelector("#buscar");
 let min = 1;
 let max = 1001;
 let random;
-let SEEN = [ , 1, 7, 8, 12, 19, 21, 22, 24, 25, 28, 31, 35, 38, 54, 65, 69, 76, 80, 82, 92, 93, 103, 104, 111, 129, 135, 151, 152, 157, 167, 188, 190, 192, 208, 233,241, 248, 273, 281, 282, 283, 284, 285, 303, 305, 310, 311, 319, 320, 323, 339, 358, 364, 383, 403,
+let SEEN = [ , 1, 7, 8, 12, 19, 21, 22, 24, 25, 28, 31, 35, 38, 54, 65, 69, 76, 80, 82, 92, 93, 103, 104, 111, 129, 135, 151, 152, 157, 167, 188, 190, 192, 208, 233,241, 248, 273, 281, 282, 283, 284, 285, 303, 305, 310, 311, 319, 320, 323, 334, 339, 358, 364, 383, 403,
 404, 408, 409, 416, 435, 462, 473, 487, 492, 508, 514, 517, 535, 545, 553, 555, 583, 587, 591, 601, 604, 607, 619, 630, 639, 671, 685, 688, 690, 695, 716, 717, 735, 752, 756, 772, 776, 780, 785, 787, 869, 877, 882, 886, 897, 903, 919, 932, 937, 939, 945, 959, 994];
 let BEST = [ , 5, 27, 73, 81, 185, 226, 246, 265, 414, 465, 467, 533, 598, 745, 842, 954];
 let BAD = [ , 106, 456, 529, 530, 758];

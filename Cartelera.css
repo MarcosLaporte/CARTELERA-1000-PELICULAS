@@ -33,8 +33,12 @@ body{
 	margin-bottom: 10px;
 }
 
+#LdP{
+	margin-bottom: 2.5mm;
+}
+
 #lista{
-	border: 3px solid black;
+	border: 3px solid rgba(173, 173, 173, 0.274);
 	text-align: center;
 	text-decoration: underline overline gray;
 	font-size: 17.5px;
