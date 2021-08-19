@@ -1,7 +1,7 @@
 body{
-	width: 1335px;
-	background: #15202B;
-	color: white;
+	width: 99%;
+	color: #15202B;
+	background: white;
 	font-family: Bahnschrift condensed;
 	text-align: left;
 }
@@ -9,7 +9,7 @@ body{
 #header h2{
 	text-align: center;
 	/* text-decoration-line: underline overline; */
-	border-top: 5px solid white;
+	border-top: 5px solid #15202B;
 	margin-bottom: 0px;
 }
 
@@ -18,10 +18,11 @@ body{
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 15px;
-	border-bottom: 5px solid white;
-	border-top: 5px solid white;
+	border-bottom: 5px solid #15202B;
+	border-top: 5px solid #15202B;
 }
 
+/* Botones */
 #random, #switch, #buscar, #vistas, #mejores, #peores{
 	font-size: large;
 	font-family: inherit;
@@ -33,7 +34,7 @@ body{
 }
 
 #lista{
-	border: 2.5px solid black;
+	border: 3px solid black;
 	text-align: center;
 	text-decoration: underline overline gray;
 	font-size: 17.5px;
