@@ -54,17 +54,19 @@
 		let a = 0;
 		let text = `<h3 id="LdP">Lista de películas:</h3><div id="lista">`;
 			for(let i = 1; i < pelis.length; i++){
-				text += pelis[i];
+				text += pelis[i]; // Toma el título en la posición i
 				if(a < linea[i]){
 	        		a++;
 	        	}
 				if(a < linea[i+1]){
 	        		text += `<br>`;
+					// Da un salto de línea
 	        	}else{
 					text += ` <b style="color: gray">|</b> `;
+					// Escribe una linea entre los títulos
 				}
 			}
-		document.getElementById("writer").innerHTML = text;
+		document.getElementById("writer").innerHTML = text; // Escribe el título guardado en la variable 'text'
 		
 	</script>
 	</div>
