@@ -7,7 +7,7 @@ let btnBuscar = document.querySelector("#buscar");
 
 	// Botón de estilo de página
 	btnSwitch.onclick = function(){
-		if(document.body.style.backgroundColor == "#15202B"){
+		if(document.body.style.backgroundColor == "dimgrey"){
 			document.body.style.backgroundColor = "white";
 				document.body.style.color = "black";
 			document.headear
@@ -17,24 +17,26 @@ let btnBuscar = document.querySelector("#buscar");
 			btnBest.style.color = "white";
 			btnBad.style.color = "white";
 			btnBuscar.style.color = "white";
-		}else if(document.body.style.backgroundColor == "white"){
-			document.body.style.backgroundColor = "#15202B";
-				document.body.style.color = "white";
-			btnSwitch.style.color = "#15202B";
-			btnRandom.style.color = "#15202B";
-			btnSeen.style.color = "#15202B";
-			btnBest.style.color = "#15202B";
-			btnBad.style.color = "#15202B";
-			btnBuscar.style.color = "#15202B";
 		}else{
-			document.body.style.backgroundColor = "white";
-				document.body.style.color = "black";
-			btnSwitch.style.color = "white";
-			btnRandom.style.color = "white";
-			btnSeen.style.color = "white";
-			btnBest.style.color = "white";
-			btnBad.style.color = "white";
-			btnBuscar.style.color = "white";
+			if(document.body.style.backgroundColor == "white"){
+				document.body.style.backgroundColor = "dimgrey";
+					document.body.style.color = "white";
+				btnSwitch.style.color = "#15202B";
+				btnRandom.style.color = "#15202B";
+				btnSeen.style.color = "#15202B";
+				btnBest.style.color = "#15202B";
+				btnBad.style.color = "#15202B";
+				btnBuscar.style.color = "#15202B";
+			}else{
+				document.body.style.backgroundColor = "dimgrey";
+					document.body.style.color = "white";
+				btnSwitch.style.color = "#15202B";
+				btnRandom.style.color = "#15202B";
+				btnSeen.style.color = "#15202B";
+				btnBest.style.color = "#15202B";
+				btnBad.style.color = "#15202B";
+				btnBuscar.style.color = "#15202B";
+			}
 		}
 	}
 	
