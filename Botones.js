@@ -1,8 +1,8 @@
 let btnSwitch = document.querySelector("#switch");
 let btnRandom = document.querySelector("#random");
-let btnSeen = document.querySelector("#vistas");
+/* let btnSeen = document.querySelector("#vistas");
 let btnBest = document.querySelector("#mejores");
-let btnBad = document.querySelector("#peores");
+let btnBad = document.querySelector("#peores"); */
 let btnBuscar = document.querySelector("#buscar");
 
 	// Botón de estilo de página
@@ -62,7 +62,7 @@ const min = 1;
 const max = 1001;
 let random;
 	
-	// Marca películas vistas
+	/* // Marca películas vistas
 	btnSeen.onclick = function(){
 		let contSeen = 0;
 		for(let i = min; i < pelis.length; i++){
@@ -111,7 +111,7 @@ let random;
 		// console.log(nameBAD);
 		btnBad.style.backgroundColor = "#0f537e";
 		btnBad.disabled = true;
-	}
+	} */
 
 	btnRandom.onclick = function(){
 		random = Math.floor(Math.random() * max + min);
