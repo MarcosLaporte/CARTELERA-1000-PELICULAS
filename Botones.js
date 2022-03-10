@@ -1,4 +1,4 @@
-let btnSwitch = document.querySelector("#switch");
+// let btnSwitch = document.querySelector("#switch");
 let btnRandom = document.querySelector("#random");
 /* let btnSeen = document.querySelector("#vistas");
 let btnBest = document.querySelector("#mejores");
@@ -6,7 +6,7 @@ let btnBad = document.querySelector("#peores"); */
 let btnBuscar = document.querySelector("#buscar");
 
 	// Botón de estilo de página
-	btnSwitch.onclick = function(){
+/*	btnSwitch.onclick = function(){
 		if(document.body.style.backgroundColor == "dimgrey"){
 			document.body.style.backgroundColor = "white";
 				document.body.style.color = "black";
@@ -38,7 +38,7 @@ let btnBuscar = document.querySelector("#buscar");
 				btnBuscar.style.color = "#15202B";
 			}
 		}
-	}
+	}*/
 	
 	// Buscador de pelis
 	btnBuscar.onclick = function(){
