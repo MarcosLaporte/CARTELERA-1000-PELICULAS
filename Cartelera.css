@@ -7,14 +7,16 @@ body{
 }
 
 #header h2{
+	font-size: 50px;
 	text-align: center;
 	/* text-decoration-line: underline overline; */
 	border-top: 5px solid #15202B;
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 #header h1{
-	font-size: 50px;
+	font-size: 100px;
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 15px;

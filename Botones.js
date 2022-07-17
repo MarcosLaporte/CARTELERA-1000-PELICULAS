@@ -41,7 +41,7 @@ let btnBuscar = document.querySelector("#buscar");
 	}*/
 	
 	// Buscador de pelis
-	btnBuscar.onclick = function(){
+	/* btnBuscar.onclick = function(){
 		let busqueda = prompt("Ingrese el nombre de una película:").toUpperCase();
 		while(busqueda.length == 0){
 			busqueda = prompt("Debe ingresar algo. Ingrese el nombre de una película:").toUpperCase();
@@ -56,7 +56,7 @@ let btnBuscar = document.querySelector("#buscar");
 				console.log(`"${busqueda}" no existe.`);
 			}
 		}
-	}
+	} */
 
 const min = 1;
 const max = 1001;
@@ -124,6 +124,5 @@ let random;
 			}else{
 				alert(`La película elegida es "${pelis[random]}"!`);
 			}
-		// alert(`La película con ese número (${random}) es: ${pelis[random]}.\n<-Línea ${linea[random]}->`);
 		console.log(`${random}, ${pelis[random]}. <-${linea[random]}->`);
 	}
